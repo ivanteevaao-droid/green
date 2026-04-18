@@ -1,0 +1,93 @@
+/* Сброс отступов и полей для всех элементов (хорошая практика) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину блока */
+}
+
+/* Общие настройки страницы */
+body {
+    font-family: Arial, sans-serif; /* Шрифт по умолчанию */
+    background-color: #A97ABE; /* Фиолетовый фон страницы как на макете */
+    color: #333; /* Цвет текста */
+}
+
+/* Шапка сайта */
+.header {
+    background-color: #A5D15E; /* Светло-зелёный фон шапки */
+    display: flex; /* Гибкая верстка для выравнивания элементов */
+    justify-content: space-between; /* Разносит меню и логотип по краям */
+    align-items: center; /* Выравнивает элементы по центру по вертикали */
+    /* Отступы внутри шапки */
+}
+
+/* Меню */
+.menu {
+    display: flex; /* Располагает пункты в ряд */
+    gap: 20px; /* Расстояние между пунктами меню */
+}
+
+.menu-item {
+    text-decoration: none; /* Убирает подчеркивание у ссылок */
+    color: #CC7C68; /* Цвет текста ссылок */
+    background-color: #F6E6CC; /* Бежевый фон кнопок меню */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 10px; /* Закругление углов */
+}
+
+/* Логотип */
+.logo img {
+    height: 141px; /* Фиксированная высота логотипа */
+}
+
+/* Основной контент */
+.content {
+    background-color: #1A3B40; /* Тёмно-зелёный фон контента */
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+     flex-wrap: wrap;
+    
+}
+
+/* Ряды товаров */
+.row {
+    display: flex; /* Располагает карточки в ряд */
+    gap: 20px; /* Расстояние между карточками */
+    margin-bottom: 20px; /* Отступ снизу у ряда */
+}
+
+/* Карточка товара */
+.item {
+    background-color: #d3d3d3; /* Светло-серый фон карточки */
+    border-radius: 10px; /* Закругление углов карточки */
+    padding: 10px;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Изображения в карточках */
+.item img {
+    width: 131px; /* Занимает всю ширину карточки */
+    height: 104px; /* Сохраняет пропорции */
+    border-radius: 10px; /* Закругление углов у картинки */
+}
+
+/* Кнопки "подробнее" */
+.btn {
+    display: inline-block; /* Делает кнопку блочной, чтобы задать размеры */
+    background-color: #A97ABE; /* Фиолетовый цвет кнопки */
+    color: white; /* Белый текст */
+    padding: 5px 15px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Закругление углов */
+    text-decoration: none; /* Убирает подчеркивание */
+    margin-top: 10px; /* Отступ сверху от картинки */
+}
+
+/* Футер */
+.footer {
+    background-color: #A5D15E; /* Светло-зелёный фон футера */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 20px;
+    margin-top: 20px;
+}
